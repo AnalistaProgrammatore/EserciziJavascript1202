@@ -41,15 +41,15 @@ if(true) {
 1.3
 ```
 let x = 1;
-const f = function(y) {
-  return x+y;
-}
 const g = function(h) {
   let x = 2;
   return h(3) + x;
 }
 if(true) {
   let x = 4;
+  const f = function(y) {
+    return x+y;
+  }
   let z = g(f)
 }
 ```
